@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Enter AMI-ID"
-read ami_id
+bash read ami_id
 echo "Enter KeyPair-Name"
-read key_name
+bash read key_name
 aws ec2 run-instances --image-id $ami_id --count 1 --instance-type t2.micro --key-name $key_name --security-group-ids sg-088974251af4f8415 --subnet-id subnet-0b57a25fd5a0448d0 --region ap-south-1  > ec2.txt
 sleep 6
 grep InstanceId ec2.txt | tr -d '", "' > InstanceId
