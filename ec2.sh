@@ -7,4 +7,4 @@
 #chmod +x InstanceId
 #./InstanceId
 #echo " Instance is launched"
-echo "$ami_id
+echo "$ami_id" > ami.txt
