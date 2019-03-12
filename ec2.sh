@@ -8,3 +8,4 @@
 #./InstanceId
 #echo " Instance is launched"
 echo "$ami_id" > ami.txt
+echo "hai" > hai.txt
